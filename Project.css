@@ -1,0 +1,334 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+header {
+    background-color: rgb(238, 189, 124);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo {
+    text-decoration: none;
+    color: darkgreen;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+/* 1 em = 16 pixels */ 
+
+.navigation a {
+    text-decoration: none;
+    color: darkgreen;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover {
+    color: darkred;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vb;
+    display: flex;
+    align-items: center;
+    background: url(123.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* BG fixed make the photo is fixed not moveable */
+}
+
+.main h2 {
+    color: #fff;
+    font-size: 1.02em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    color: rgba(0, 143, 45, 0.592);
+    font-size: 3em;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.main h3 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    text-decoration: none;
+    background-color: rgb(16, 108, 6);
+    color: #fff;
+    padding: 0.9375em 2.1875em;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    border-radius: 15px;
+    transition: 0.7s ease;
+    /* تحول بيحصل في مدة اللي محددها للزرار نفسه */
+}
+
+.main-btn:hover {
+    background-color: darkgreen;
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    
+    color: #fff;
+    font-size: 1.7em;
+    margin-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: darkgreen;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    /* 3shan 3ayz l cards tb2a 3ala row wa7ed */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    width: 18.25em;
+    /* em X 16 = pixels */
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    /* box shadow by3ml 7awalen l box  */
+    /* 1st = top and bottom */
+    /* 2nd= right and left */
+    /* 3rd color  */
+    /* 4th = opacity (الشفافية) */
+    border-radius: 10px;
+    padding: 25px;
+    /* padding = بيعمل مساحة جوة ال Element نفسها */
+    margin: 15px;
+    /* margin = بيعمل مساحة بين الElements وبعضها */
+    transition: 0.7 ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: darkgreen;
+    font-size: 5.8em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+
+.info h3 {
+    color: darkgreen;
+    font-size: 1.8em;
+    margin: 10px;
+    font-weight: 700;
+}
+
+.Details {
+    background-color: rgba(26, 87, 2, 0.505);
+}
+
+.projects .content {
+    margin-top: 30px;
+}
+
+.Project-card {
+    background-color: #fff;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7 ease;
+}
+
+.Project-card:hover {
+    transform: scale(1.1);
+}
+
+.Project-card:hover .Project-Img {
+    opacity: 0.9;
+    /* مدي الشفافية لل Element */
+}
+
+.Project-Img img {
+    width: 100%;
+}
+
+.Project-info {
+    padding: 1em;
+}
+
+.Projcet-Category {
+    font-size: 0.8em;
+    color: black;
+
+}
+
+.Project-title {
+    display: flex;
+    justify-content: space-between;
+    /* عملت كدة عشان عايز اسيب مسافة بينهم  */
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.Project-title a {
+    text-decoration: none;
+    
+}
+
+.Project-title a:hover {
+    color: red;
+}
+
+.Contact-Card {
+    padding: 10px;
+    flex-wrap: wrap;
+    margin: 20px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    width: 400px;
+    box-sizing: border-box;
+    padding-top: 40px;
+}
+
+.Contact-Card .info {
+    font-size: 1.08em;
+    font-weight: 500;
+    text-align: center;
+    transition: 1ms;
+}
+
+.Contact-Card:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: darkgreen;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: rgb(67, 195, 67);
+}
+
+footer .social-icons a {
+    font-size: 1.3em;
+    padding: 0 20px 0 0;
+}
+
+@media (max-width:300px) {
+    body {
+        font-size: 10px;
+    }
+
+    .main-content h2 {
+        font-size: 0.4em;
+    }
+
+    .main-content h3 {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width:641px) {
+    body {
+        font-size: 12px;
+
+    }
+
+    .main-content h2 {
+        font-size: 0.8em;
+    }
+
+    .main-content h3 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width:1023px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .navigation a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .main-content h2 {
+        font-size: 1em;
+    }
+
+    .main-content h3 {
+        font-size: 1.6em;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
